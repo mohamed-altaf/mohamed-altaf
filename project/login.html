@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" href="css/Stylogin.css">
+    </head>
+    <body>
+      <div class="container">
+        <div class="title">Registration</div>
+          <form action="#" name="myForm"  onsubmit="return(validate());">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Full Name</span>
+                  <input type="text" id="input_name" placeholder="Enter your name"  name="Name">
+            </div>
+              <div class="input-box">
+                <span class="details">userName</span>
+                  <input type="text" id="input_user" placeholder="Enter your userName" name="user" >    
+              </div>
+              <div class="input-box">
+              <span class="details">Email</span>
+                  <input type="email" id="input_EMail" placeholder="Enter your email" name="EMail" >
+              </div>
+              <div class="input-box">
+              <span class="details">phone number</span>
+                  <input type="number" id="input_phone" placeholder="Enter your number" name ="phone">  
+              </div>
+              <div class="input-box">
+              <span class="details">password</span>
+            <input type="password" id="psw" placeholder="Enter your password" name="password">  
+            <div id="message">
+              <h4>Password must contain the following:</h4>
+              <p id="letter" class="invalid">A lowercase letter</p>
+              <p id="capital" class="invalid">A uppercase letter</p>
+              <p id="number" class="invalid">A number </p>
+              <p id="length" class="invalid">Minimum 8 characters</p>
+            </div>
+              </div>
+              <div class="input-box">
+              <span class="details">confirm password</span>
+            <input type="password" id="psw1" placeholder="confirm password" name="cpassword"> 
+              </div>
+              </div>
+              <div class="gender-details">
+                <input type="radio" name="gender" id="dot-1">
+                <input type="radio" name="gender" id="dot-2">
+                <input type="radio" name="gender" id="dot-3">
+              <span class="gender-title">Gender</span>
+                  <div class="category">
+                    <label for="dot-1">
+                      <span class="dot one"></span>
+                      <span class="gender">male</span>
+                   </label>
+                <label for="dot-2">
+                      <span class="dot two"></span>
+                      <span class="gender">female</span>
+                </label>
+                <label for="dot-3">
+                      <span class="dot three"></span>
+                      <span class="gender">other</span>
+                </label>
+                  </div>
+              </div>
+          <div class="button">
+              <input type="submit" value="Register" >
+              </div>
+          </form>
+        </div>
+        <script type="text/javascript" src="js_Rgs.js"></script>
+    </body>
+</html>

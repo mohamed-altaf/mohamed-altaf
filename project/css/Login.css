@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;   
+}
+body{
+    background: linear-gradient(135deg,rgb(0, 0, 0),#661885);
+}
+  .imgcontainer {
+    text-align: center;
+    margin: 22px 0 12px 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 25%;
+    border-radius: 50%;
+  }
+  span{
+     margin-left: 230px;
+  }
+  .container {
+    padding: 16px;
+    background-color: #020202;
+    margin: 5% auto 9% auto; 
+    width: 40%;
+    height: 75vh;
+    color: aliceblue;
+    border-radius: 30PX;
+  }
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 4px;
+  }
+  button {
+ background: linear-gradient(135deg,rgb(94, 4, 82),#661885);
+    color: white;
+    padding: 14px 20px;
+    margin: 40px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    background: linear-gradient(135deg,#661885,rgb(58, 2, 71));
+    opacity: 0.8;
+  }

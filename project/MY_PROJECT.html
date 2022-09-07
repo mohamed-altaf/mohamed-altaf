@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animals</title>
+        <link rel="stylesheet" href="css/STYEL_Home.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <h1><span>ِِA</span>nimals</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="header_link">Home</a></li>
+                    <li><a href="#photos" class="header_link">photos</a></li>
+                    <li><a href="#About" class="header_link">About</a></li>
+                    <li><a href="#products"class="header_link">products</a></li>
+                    <li><a href="#contact" class="header_link">contact</a></li>
+                </ul>
+                <form>
+                  <input alt="g" type="text" name="serch" id="srch" required placeholder="Enter your serch"> 
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+                <div class="cart">
+                  <img src="img/add.png" style="width: 35px" class="iconImg" onclick="add()" >
+                  <a href="#" class="notification">
+                    <img src="img/shopping-cart.png" class="iconImg">
+                    <div id="badge">o</div>
+                  </a>
+                  <img src="img/sun.png" id="sun" class="iconImg" onclick="myFunction()" >
+                </div>
+            </nav>
+         <img src="img/arrow.png" onclick="topFunction()" id="myBtn" title="Go to top">
+        </header>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <img src="img/1.jpg" class="coverImg">
+                  <div class="text">
+                    <h2><span>C</span>at </h2>
+                    <p>please! subscribe,share and Like for Us</p>
+                    <a href="login.html"><button class="button">Sgin up</button></a>
+                    <a href="login2.html"><button class="button">login</button></a>
+                  </div>
+                </div>
+                <div class="mySlides fade">
+                  <img src="img/vv.jpg" class="coverImg">
+                  <div class="text">
+                    <h2><span>b</span>irds </h2>
+                    <p>please! subscribe,share and Like for Us</p>
+                    <a href="login.html"><button class="button">Sgin up</button></a>
+                    <a href="login2.html"><button class="button">login</button></a>
+                  </div>
+                </div>
+                <div class="mySlides fade">
+                  <img src="img/v.jpg" class="coverImg">
+                  <div class="text">
+                    <h2><span>d</span>og </h2>
+                    <p>please! subscribe,share and Like for Us</p>
+                    <a href="login.html"><button class="button">Sgin up</button></a>
+                    <a href="login2.html"><button class="button">login</button></a>
+                  </div>
+               </div>
+            </div>
+                <a class="prev" onclick="plusSlides(1)">❮</a>
+                <a class="next" onclick="plusSlides(-1)">❯</a>
+                <br> 
+                <div class="dots" >
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>  
+            </div>
+            <section>
+              <div class="t1">
+                <h1  id="photos">Photos</h1>
+                <span class="line"></span>
+              </div>
+                <div class="row">
+                  <div class="container">
+                    <img src="img/pexels-pixabay-235805.jpg" alt="Avatar" class="image">
+                    <div class="overlay">
+                      <div class="text_img">DOG</div>
+                      <div class="icon1">
+                        <a href="#" onclick="myCart()"><i class="fa fa-shopping-cart"></i></a>
+                        <a href="#"><i class="fa fa-heart" style="color: red;"></i></a>
+                        <a href="#"><i class="fa fa-music" style="color:rgb(43, 4, 4);"></i></a>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="container">
+                    <img src="img/pexels-kelvin-valerio-617278.jpg" alt="Avatar" class="image">
+                    <div class="overlay">
+                      <div class="text_img">CAT</div>
+                      <div class="icon1">
+                        <a href="#" onclick="myCart()"><i class="fa fa-shopping-cart"></i></a>
+                        <a href="#"><i class="fa fa-heart" style="color: red;"></i></a>
+                        <a href="#"><i class="fa fa-music" style="color:rgb(43, 4, 4);"></i></a>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="container">
+                    <img src="img/pexels-pixabay-248307.jpg" alt="Avatar" class="image">
+                    <div class="overlay">
+                      <div class="text_img">DOG</div>
+                      <div class="icon1">
+                        <a href="#" onclick="myCart()"><i class="fa fa-shopping-cart"></i></a>
+                        <a href="#"><i class="fa fa-heart" style="color: red;"></i></a>
+                        <a href="#"><i class="fa fa-music" style="color:rgb(43, 4, 4);"></i></a>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="container">
+                    <img src="img/3.jpg" alt="Avatar" class="image">
+                    <div class="overlay">
+                      <div class="text_img">BIRD</div>
+                      <div class="icon1">
+                        <a href="#" onclick="myCart()"><i class="fa fa-shopping-cart"></i></a>
+                        <a href="#"><i class="fa fa-heart" style="color: red;"></i></a>
+                        <a href="#"><i class="fa fa-music" style="color:rgb(43, 4, 4);"></i></a>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="container">
+                    <img src="img/5.jpg" alt="Avatar" class="image">
+                    <div class="overlay">
+                      <div class="text_img">CAT</div>
+                      <div class="icon1">
+                        <a href="#" onclick="myCart()"><i class="fa fa-shopping-cart"></i></a>
+                        <a href="#"><i class="fa fa-heart" style="color: red;"></i></a>
+                        <a href="#"><i class="fa fa-music" style="color:rgb(43, 4, 4);"></i></a>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="container">
+                    <img src="img/pexels-pixabay-53581.jpg" alt="Avatar" class="image">
+                    <div class="overlay">
+                      <div class="text_img">Eagle</div>
+                        <div class="icon1">
+                          <a href="#" onclick="myCart()"><i class="fa fa-shopping-cart"></i></a>
+                          <a href="#"><i class="fa fa-heart" style="color: red;"></i></a>
+                          <a href="#"><i class="fa fa-music" style="color:rgb(43, 4, 4);"></i></a>
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+              <div class="prodc">
+                <div class="col">
+                    <div class="t1">
+                       <h2 class="title" id="About">About</h2>
+                       <span class="line"></span>
+                       </div>
+                    <div id="column1">
+                        <img class="img_box" src="img/2.jpg">
+                        <h2 class="t1">Polydactyl</h2>
+                        <span class="line"></span>
+                        <p class="prog">polydactyls have a genetic mutation that 
+                          gives them more than the usual number of toes on one
+                           or more feet. Polydactyl cats can have anywhere
+                            from six to eight toes per paw. The extra toes 
+                            sometimes </p>
+                            <div class="linRed">%52</div>
+                            <h3 id="textPrice">350$ <sub><del>500$</de></sub></h3>
+                            <button class="button1" onclick="myCart()">ADD cart</button>
+                    </div>
+                    <div id="column2">
+                         <img class="img_box" src="img/pexels-valeria-boltneva-1805164.jpg">
+                         <h2 class="t1">Snowshoe </h2>
+                          <span class="line"></span>
+                          <p class="prog">With its white muzzle and feet, dark "points,"
+                            and blue eyes, the Snowshoe looks like what it
+                            was bred from: a Siamese with white "boots" 
+                            that turned up in the litter of a Siamese 
+                            breeder in Philadelphia in the 1960s.</p>
+                            <div class="linRed">%60</div>
+                            <h3 id="textPrice">300$ <sub><del>650$</de></sub></h3>
+                            <button class="button1" onclick="myCart()">ADD cart</button>
+                    </div>
+                    <div id="column3">
+                           <img class="img_box" src="img/pexels-aslam-jawaid-3935361.jpg">
+                           <h2 class="t1">Persian</h2>
+                           <span class="line"></span>
+                           <p class="prog">Fur, fur, fur. The Persians (called Longhairs outside the U.S.)
+                           are perhaps the quintessential "luxury" cat_that is, 
+                           the cat who expects to be kept in the lap of luxury.
+                            They are, however, the most popular cat breed in the world.
+                           </p>
+                           <div class="linRed">%20</div>
+                           <h3 id="textPrice">100$ <sub><del>150$</de></sub></h3>
+                           <button class="button1"onclick="myCart()">ADD cart</button>
+                   </div>
+                 </div>
+                  <div class="products">
+                      <div class="t1">
+                         <h2 class="title" id="products">products</h2>
+                         <span class="line"></span> 
+                         </div>
+                      </div>
+                <div class="container1">
+                    <div class="card">
+                      <i onclick="dlt(this.parentElement)" class="fa fa-trash"></i>
+                      <img src="img/1.jpg">
+                      <h3>Cat</h3>
+                    <div id="str"  class="icon_star" >
+                      <i id="checked" class="fa fa-star checked"></i>
+                      <i class="fa fa-star "></i>
+                      <i class="fa fa-star "></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                      <h5>$300.99</h5>
+                      <button class="button1"onclick="myCart()">ADD TO CART</button>
+                   </div>
+                    <div class="card">
+                      <i onclick="dlt(this.parentElement)" class="fa fa-trash"></i>
+                      <img src="img/2.jpg">
+                      <h3>Cat</h3>
+                     <div class="icon_star">
+                      <i class="fa fa-star checked"></i>
+                      <i class="fa fa-star checked"></i>
+                      <i class="fa fa-star "></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                     </div>
+                      <h5>$200.99</h5>
+                      <button class="button1" onclick="myCart()">ADD TO CART</button>
+                   </div>
+                  <div class="card">
+                     <i onclick="dlt(this.parentElement)" class="fa fa-trash" ></i>
+                     <img src="img/3.jpg">
+                     <h3>Cat</h3>
+                     <div class="icon_star"onclick="star()">
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked "></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                    </div>
+                     <h5>$115.99</h5>
+                     <button class="button1" onclick="myCart()">ADD TO CART</button>
+                  </div>
+                 <div class="card">
+                     <i onclick="dlt(this.parentElement)" class="fa fa-trash" ></i>
+                     <img src="img/5.jpg">
+                     <h3>Cat</h3>
+                    <div class="icon_star">
+                      <i class="fa fa-star checked"></i>
+                      <i class="fa fa-star checked"></i>
+                      <i class="fa fa-star "></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                      <h5>$12.99</h5>
+                      <button class="button1" onclick="myCart()">ADD TO CART</button>
+                  </div>
+                  <div class="card">
+                     <i onclick="dlt(this.parentElement)" class="fa fa-trash" ></i>
+                     <img src="img/pexels-pixabay-235805.jpg">
+                     <h3>Cat</h3>
+                    <div class="icon_star">
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star "></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                    </div>
+                     <h5>$121.99</h5>
+                     <button class="button1"onclick="myCart()">ADD TO CART</button>
+                  </div>
+                <div class="card">
+                     <i onclick="dlt(this.parentElement)" class="fa fa-trash" ></i>
+                     <img src="img/pexels-flickr-151511 (1).jpg">
+                     <h3>Cat</h3>
+                    <div class="icon_star">
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star checked"></i>
+                     <i class="fa fa-star "></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                   </div>
+                     <h5>$20.99</h5>
+                     <button class="button1"onclick="myCart()">ADD TO CART</button>
+                </div>
+           </div>
+              <div class="team">
+                  <div class="t1">
+                   <h1 >Team Member</h1>
+                   <span class="line"></span>
+                  </div>
+                  <div class="TeamMember">
+                    <img src="img/b2.jpg" class="teamimg" >
+                    <h1>Mohamed Altaf</h1>
+                    <p>19-00077</p>
+                    <div class="teamicon">
+                      <a href="#"><img src="img/facebook.png" id="teamicon"></a> 
+                      <a href="#"><img src="img/twitter.png" id="teamicon"></a>  
+                      <a href="#"><img src="img/instagram.png" id="teamicon"></a>  
+                      <a href="#"><img src="img/linkedin.png" id="teamicon"></a> 
+                    </div>
+                     <button class="teambutton">Contact</button>
+                  </div>
+                  <div class="TeamMember">
+                    <img src="img/11.png" class="teamimg">
+                    <h1>Rania Refaat </h1>
+                    <p>19-00346</p>
+                    <div class="teamicon">
+                      <a href="#"><img src="img/facebook.png" id="teamicon"></a> 
+                      <a href="#"><img src="img/twitter.png" id="teamicon"></a>  
+                      <a href="#"><img src="img/instagram.png" id="teamicon"></a>  
+                      <a href="#"><img src="img/linkedin.png" id="teamicon"></a> 
+                    </div>
+                    <button class="teambutton">Contact</button>
+                  </div>
+                  <div class="TeamMember">
+                    <img src="img/b.jpg" class="teamimg">
+                    <h1>Mohamed helmy</h1>
+                    <p>19-00402</p>
+                    <div class="teamicon">
+                      <a href="#"><img src="img/facebook.png" id="teamicon"></a> 
+                      <a href="#"><img src="img/twitter.png" id="teamicon"></a>  
+                      <a href="#"><img src="img/instagram.png" id="teamicon"></a>  
+                      <a href="#"><img src="img/linkedin.png" id="teamicon"></a> 
+                    </div>
+                    <button class="teambutton">Contact</button>
+                  </div>
+                  <div class="TeamMember">
+                    <img src="img/g.jpg"class="teamimg">
+                    <h1>Rola Essam</h1>
+                    <p>1900651</p>
+                    <div class="teamicon">
+                      <a href="#"><img src="img/facebook.png" id="teamicon"></a> 
+                      <a href="#"><img src="img/twitter.png" id="teamicon"></a>  
+                      <a href="#"><img src="img/instagram.png" id="teamicon"></a>  
+                      <a href="#"><img src="img/linkedin.png" id="teamicon"></a> 
+                    </div>
+                    <button class="teambutton">Contact</button>
+                  </div>
+                  <div class="TeamMember">
+                    <img src="img/b1.jpg" class="teamimg">
+                    <h1>Beshoy nazeeh</h1>
+                    <p>19-00144</p>
+                    <div class="teamicon" >
+                      <a href="#"><img src="img/facebook.png" id="teamicon"></a> 
+                      <a href="#"><img src="img/twitter.png" id="teamicon"></a>  
+                      <a href="#"><img src="img/instagram.png" id="teamicon"></a>  
+                      <a href="#"><img src="img/linkedin.png" id="teamicon"></a>  
+                    </div>
+                    <button class="teambutton">Contact</button>
+                  </div> 
+              </div>
+              <div class="Contact">
+                <div class="t1">
+                  <h1 id="contact">contact us</h1>
+                  <span class="line"></span>
+                 </div>
+                 <div class="form1">
+                  <h1 style="margin-left: 25px;">Need More Question?</h1>
+                  <p style="margin-left: 25px;">   Please fill the form below and we will get back to you within 24 business hours.</p>
+                      <i class="fa fa-user" id="icon"></i>
+                      <input type="text" placeholder="  user name" class="npt">
+                      <i class="fa fa-paperclip" id="icon"></i>
+                      <input type="email" placeholder=" EMAIL" class="npt">
+                      <i class="fa fa-envelope" id="icon"></i>
+                      <textarea  class="npt" Id="npt2" placeholder="  enter Message"></textarea>
+                       <button type="button" class="bmessage">send message</button>
+                       <div class="icon2">
+                          <a href="#"><i class="fa fa-map-marker" id="hh"></i></a>
+                          <a href="#"><i class="fa fa-phone" id="hh"></i></a>
+                          <a href="#"><i class="fa fa-android" id="hh"></i></a>
+                      </div>
+                  </div>
+              </div>            
+     </div>
+            </section> 
+        <footer>
+          <div class="news">
+            <div class="headein">latest naws</div>
+                <a href="#">there are offers on cats for alimited time</a><br>
+                <a href="#">discount 30% on Ramadan offers</a><br>
+                <a href="#">the Cat store congratulates you on the holy month of Ramadan</a>  
+          </div>
+        <div class="links">
+          <div class="headein">contact us via </div>
+                 <a href="#" class="footicon"><i class="fa fa-map-marker">: cat store Assiut street</i></a>
+                 <a href="#" class="footicon"><i class="fa fa-phone" >: 0121212323</i></a>
+                 <a href="#" class="footicon"><i class="fa fa-user" >: Animals121@gmeli.com</i></a>
+             <div >
+                  <a href="#"><img src="img/facebook.png" id="teamicon"></a> 
+                  <a href="#"><img src="img/twitter.png" id="teamicon"></a>  
+                  <a href="#"><img src="img/instagram.png" id="teamicon"></a>  
+                  <a href="#"><img src="img/linkedin.png" id="teamicon"></a> 
+           </div>
+        </div>
+        <div class="visitors">
+          <div class="headein">site visitors</div>
+          <a href="https://info.flagcounter.com/4viE"><img src="https://s05.flagcounter.com/count2/4viE/bg_000000/txt_FFFFFF/border_CCCCCC/columns_3/maxflags_12/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
+        </div>
+        </footer>
+    </body>
+        <script type="text/javascript" src="js_Home.js"></script>
+</html>

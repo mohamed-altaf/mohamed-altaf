@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" href="css/Login.css">
+    </head>
+    <body>
+            <form class="modal-content animate"  name="myForm" onsubmit="return(validate())">
+              <div class="container">
+                <div class="imgcontainer">
+                    <img src="img/b.jpg" alt="Avatar" class="avatar">
+                  </div>    
+                <label><b>Username</b></label>
+                <input type="text" id="userName" placeholder="Enter Username" name="uname" >
+                
+                <label ><b>Password</b></label>
+                <input type="password" id="psw" placeholder="Enter Password" name="psw" >
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+                  
+                <button type="submit">Login</button>
+                    <span class="psw">Forgot <a href="#" id="newform">password?</a></span>
+              </div>
+            </form>
+            <script type="text/javascript" src="css/js_login.js"></script>
+   </body>
+    </html>
